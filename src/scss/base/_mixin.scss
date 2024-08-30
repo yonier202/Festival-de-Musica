@@ -30,10 +30,10 @@
     margin: 0 auto;
 }
 
-@mixin grid($columnas){
+@mixin grid($columnas, $gap: 5rem){
     display: grid;
     grid-template-columns: repeat($columnas, 1fr);
-    column-gap: 5rem;
+    gap: $gap;
 }
 
 @mixin resetear-lista{
